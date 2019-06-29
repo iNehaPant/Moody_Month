@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA129C9B22C411BD00B55D7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA129C9D22C411BD00B55D7C /* Localizable.strings */; };
+		BA129CA322C4C3E400B55D7C /* MQNACellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CA122C4C3E400B55D7C /* MQNACellTableViewCell.swift */; };
+		BA129CA422C4C3E400B55D7C /* MQNACellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA129CA222C4C3E400B55D7C /* MQNACellTableViewCell.xib */; };
+		BA129CA622C4D5D700B55D7C /* MTopTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CA522C4D5D700B55D7C /* MTopTitleView.swift */; };
+		BA129CA822C4D5E700B55D7C /* MTopTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA129CA722C4D5E700B55D7C /* MTopTitleView.xib */; };
+		BA129CAD22C4E5EB00B55D7C /* MViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CAC22C4E5EB00B55D7C /* MViewExtension.swift */; };
+		BA129CAF22C4F3EB00B55D7C /* QNA.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CAE22C4F3EB00B55D7C /* QNA.swift */; };
+		BA129CB722C5032700B55D7C /* ContraceptivePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CB122C5032700B55D7C /* ContraceptivePresenter.swift */; };
+		BA129CB822C5032700B55D7C /* ContraceptiveWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CB222C5032700B55D7C /* ContraceptiveWorker.swift */; };
+		BA129CB922C5032700B55D7C /* ContraceptiveRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CB322C5032700B55D7C /* ContraceptiveRouter.swift */; };
+		BA129CBA22C5032700B55D7C /* ContraceptiveModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CB422C5032700B55D7C /* ContraceptiveModels.swift */; };
+		BA129CBB22C5032700B55D7C /* ContraceptiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CB522C5032700B55D7C /* ContraceptiveViewController.swift */; };
+		BA129CBC22C5032700B55D7C /* ContraceptiveInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CB622C5032700B55D7C /* ContraceptiveInteractor.swift */; };
+		BA129CBE22C5033C00B55D7C /* ContraceptiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA129CBD22C5033C00B55D7C /* ContraceptiveViewController.xib */; };
+		BA129CC522C5072600B55D7C /* MenstralCycleQNAPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CBF22C5072600B55D7C /* MenstralCycleQNAPresenter.swift */; };
+		BA129CC622C5072600B55D7C /* MenstralCycleQNAWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CC022C5072600B55D7C /* MenstralCycleQNAWorker.swift */; };
+		BA129CC722C5072600B55D7C /* MenstralCycleQNARouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CC122C5072600B55D7C /* MenstralCycleQNARouter.swift */; };
+		BA129CC822C5072600B55D7C /* MenstralCycleQNAModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CC222C5072600B55D7C /* MenstralCycleQNAModels.swift */; };
+		BA129CC922C5072600B55D7C /* MenstralCycleQNAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CC322C5072600B55D7C /* MenstralCycleQNAViewController.swift */; };
+		BA129CCA22C5072600B55D7C /* MenstralCycleQNAInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CC422C5072600B55D7C /* MenstralCycleQNAInteractor.swift */; };
+		BA129CCC22C5073500B55D7C /* MenstralCycleQNAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA129CCB22C5073500B55D7C /* MenstralCycleQNAViewController.xib */; };
+		BA129CD922C6192F00B55D7C /* MenstalQNAPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CD322C6192F00B55D7C /* MenstalQNAPresenter.swift */; };
+		BA129CDA22C6192F00B55D7C /* MenstalQNAWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CD422C6192F00B55D7C /* MenstalQNAWorker.swift */; };
+		BA129CDB22C6192F00B55D7C /* MenstalQNARouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CD522C6192F00B55D7C /* MenstalQNARouter.swift */; };
+		BA129CDC22C6192F00B55D7C /* MenstalQNAModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CD622C6192F00B55D7C /* MenstalQNAModels.swift */; };
+		BA129CDD22C6192F00B55D7C /* MenstalQNAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CD722C6192F00B55D7C /* MenstalQNAViewController.swift */; };
+		BA129CDE22C6192F00B55D7C /* MenstalQNAInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CD822C6192F00B55D7C /* MenstalQNAInteractor.swift */; };
+		BA129CE022C6193C00B55D7C /* MenstalQNAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA129CDF22C6193C00B55D7C /* MenstalQNAViewController.xib */; };
+		BA129CE722C61BAD00B55D7C /* MenstralReportPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CE122C61BAD00B55D7C /* MenstralReportPresenter.swift */; };
+		BA129CE822C61BAD00B55D7C /* MenstralReportWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CE222C61BAD00B55D7C /* MenstralReportWorker.swift */; };
+		BA129CE922C61BAD00B55D7C /* MenstralReportRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CE322C61BAD00B55D7C /* MenstralReportRouter.swift */; };
+		BA129CEA22C61BAD00B55D7C /* MenstralReportModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CE422C61BAD00B55D7C /* MenstralReportModels.swift */; };
+		BA129CEB22C61BAD00B55D7C /* MenstralReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CE522C61BAD00B55D7C /* MenstralReportViewController.swift */; };
+		BA129CEC22C61BAD00B55D7C /* MenstralReportInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CE622C61BAD00B55D7C /* MenstralReportInteractor.swift */; };
+		BA129CEE22C61BBB00B55D7C /* MenstralReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA129CED22C61BBB00B55D7C /* MenstralReportViewController.xib */; };
+		BA129CF222C6258500B55D7C /* MoodyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CF122C6258500B55D7C /* MoodyData.swift */; };
+		BA506AD322C3CBA000504A36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506AD222C3CBA000504A36 /* AppDelegate.swift */; };
+		BA506AD822C3CBA000504A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA506AD622C3CBA000504A36 /* Main.storyboard */; };
+		BA506ADA22C3CBA100504A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA506AD922C3CBA100504A36 /* Assets.xcassets */; };
+		BA506ADD22C3CBA100504A36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA506ADB22C3CBA100504A36 /* LaunchScreen.storyboard */; };
+		BA506AE822C3CBA100504A36 /* MoodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506AE722C3CBA100504A36 /* MoodyTests.swift */; };
+		BA506AF322C3CBA100504A36 /* MoodyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506AF222C3CBA100504A36 /* MoodyUITests.swift */; };
+		BA506B0E22C3CCDB00504A36 /* MSetUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506B0822C3CCDB00504A36 /* MSetUpPresenter.swift */; };
+		BA506B0F22C3CCDB00504A36 /* MSetUpWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506B0922C3CCDB00504A36 /* MSetUpWorker.swift */; };
+		BA506B1022C3CCDB00504A36 /* MSetUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506B0A22C3CCDB00504A36 /* MSetUpRouter.swift */; };
+		BA506B1122C3CCDB00504A36 /* MSetUpModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506B0B22C3CCDB00504A36 /* MSetUpModels.swift */; };
+		BA506B1222C3CCDB00504A36 /* MSetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506B0C22C3CCDB00504A36 /* MSetUpViewController.swift */; };
+		BA506B1322C3CCDB00504A36 /* MSetUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506B0D22C3CCDB00504A36 /* MSetUpInteractor.swift */; };
+		BA506B1522C3CCED00504A36 /* MSetUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA506B1422C3CCED00504A36 /* MSetUpViewController.xib */; };
+		BA506B2022C3DA2000504A36 /* PeriodQNAPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506B1A22C3DA2000504A36 /* PeriodQNAPresenter.swift */; };
+		BA506B2122C3DA2000504A36 /* PeriodQNAWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506B1B22C3DA2000504A36 /* PeriodQNAWorker.swift */; };
+		BA506B2222C3DA2000504A36 /* PeriodQNARouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506B1C22C3DA2000504A36 /* PeriodQNARouter.swift */; };
+		BA506B2322C3DA2000504A36 /* PeriodQNAModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506B1D22C3DA2000504A36 /* PeriodQNAModels.swift */; };
+		BA506B2422C3DA2000504A36 /* PeriodQNAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506B1E22C3DA2000504A36 /* PeriodQNAViewController.swift */; };
+		BA506B2522C3DA2000504A36 /* PeriodQNAInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506B1F22C3DA2000504A36 /* PeriodQNAInteractor.swift */; };
+		BA506B2722C3DA4A00504A36 /* PeriodQNAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA506B2622C3DA4A00504A36 /* PeriodQNAViewController.xib */; };
+		BA506B4022C40D3700504A36 /* MBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506B3F22C40D3700504A36 /* MBottomView.swift */; };
+		BA506B4222C40D4B00504A36 /* MBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA506B4122C40D4B00504A36 /* MBottomView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA506AE422C3CBA100504A36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA506AC722C3CBA000504A36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA506ACE22C3CBA000504A36;
+			remoteInfo = Moody;
+		};
+		BA506AEF22C3CBA100504A36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA506AC722C3CBA000504A36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA506ACE22C3CBA000504A36;
+			remoteInfo = Moody;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA129C9C22C411BD00B55D7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BA129CA122C4C3E400B55D7C /* MQNACellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQNACellTableViewCell.swift; sourceTree = "<group>"; };
+		BA129CA222C4C3E400B55D7C /* MQNACellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MQNACellTableViewCell.xib; sourceTree = "<group>"; };
+		BA129CA522C4D5D700B55D7C /* MTopTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTopTitleView.swift; sourceTree = "<group>"; };
+		BA129CA722C4D5E700B55D7C /* MTopTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTopTitleView.xib; sourceTree = "<group>"; };
+		BA129CAC22C4E5EB00B55D7C /* MViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MViewExtension.swift; sourceTree = "<group>"; };
+		BA129CAE22C4F3EB00B55D7C /* QNA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QNA.swift; path = ReUsableComponent/QNA.swift; sourceTree = "<group>"; };
+		BA129CB122C5032700B55D7C /* ContraceptivePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContraceptivePresenter.swift; sourceTree = "<group>"; };
+		BA129CB222C5032700B55D7C /* ContraceptiveWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContraceptiveWorker.swift; sourceTree = "<group>"; };
+		BA129CB322C5032700B55D7C /* ContraceptiveRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContraceptiveRouter.swift; sourceTree = "<group>"; };
+		BA129CB422C5032700B55D7C /* ContraceptiveModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContraceptiveModels.swift; sourceTree = "<group>"; };
+		BA129CB522C5032700B55D7C /* ContraceptiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContraceptiveViewController.swift; sourceTree = "<group>"; };
+		BA129CB622C5032700B55D7C /* ContraceptiveInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContraceptiveInteractor.swift; sourceTree = "<group>"; };
+		BA129CBD22C5033C00B55D7C /* ContraceptiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContraceptiveViewController.xib; sourceTree = "<group>"; };
+		BA129CBF22C5072600B55D7C /* MenstralCycleQNAPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstralCycleQNAPresenter.swift; sourceTree = "<group>"; };
+		BA129CC022C5072600B55D7C /* MenstralCycleQNAWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstralCycleQNAWorker.swift; sourceTree = "<group>"; };
+		BA129CC122C5072600B55D7C /* MenstralCycleQNARouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstralCycleQNARouter.swift; sourceTree = "<group>"; };
+		BA129CC222C5072600B55D7C /* MenstralCycleQNAModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstralCycleQNAModels.swift; sourceTree = "<group>"; };
+		BA129CC322C5072600B55D7C /* MenstralCycleQNAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstralCycleQNAViewController.swift; sourceTree = "<group>"; };
+		BA129CC422C5072600B55D7C /* MenstralCycleQNAInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstralCycleQNAInteractor.swift; sourceTree = "<group>"; };
+		BA129CCB22C5073500B55D7C /* MenstralCycleQNAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenstralCycleQNAViewController.xib; sourceTree = "<group>"; };
+		BA129CD322C6192F00B55D7C /* MenstalQNAPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstalQNAPresenter.swift; sourceTree = "<group>"; };
+		BA129CD422C6192F00B55D7C /* MenstalQNAWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstalQNAWorker.swift; sourceTree = "<group>"; };
+		BA129CD522C6192F00B55D7C /* MenstalQNARouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstalQNARouter.swift; sourceTree = "<group>"; };
+		BA129CD622C6192F00B55D7C /* MenstalQNAModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstalQNAModels.swift; sourceTree = "<group>"; };
+		BA129CD722C6192F00B55D7C /* MenstalQNAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstalQNAViewController.swift; sourceTree = "<group>"; };
+		BA129CD822C6192F00B55D7C /* MenstalQNAInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstalQNAInteractor.swift; sourceTree = "<group>"; };
+		BA129CDF22C6193C00B55D7C /* MenstalQNAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenstalQNAViewController.xib; sourceTree = "<group>"; };
+		BA129CE122C61BAD00B55D7C /* MenstralReportPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstralReportPresenter.swift; sourceTree = "<group>"; };
+		BA129CE222C61BAD00B55D7C /* MenstralReportWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstralReportWorker.swift; sourceTree = "<group>"; };
+		BA129CE322C61BAD00B55D7C /* MenstralReportRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstralReportRouter.swift; sourceTree = "<group>"; };
+		BA129CE422C61BAD00B55D7C /* MenstralReportModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstralReportModels.swift; sourceTree = "<group>"; };
+		BA129CE522C61BAD00B55D7C /* MenstralReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstralReportViewController.swift; sourceTree = "<group>"; };
+		BA129CE622C61BAD00B55D7C /* MenstralReportInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstralReportInteractor.swift; sourceTree = "<group>"; };
+		BA129CED22C61BBB00B55D7C /* MenstralReportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenstralReportViewController.xib; sourceTree = "<group>"; };
+		BA129CF122C6258500B55D7C /* MoodyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyData.swift; sourceTree = "<group>"; };
+		BA506ACF22C3CBA000504A36 /* Moody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moody.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA506AD222C3CBA000504A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA506AD722C3CBA000504A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA506AD922C3CBA100504A36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA506ADC22C3CBA100504A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA506ADE22C3CBA100504A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA506AE322C3CBA100504A36 /* MoodyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA506AE722C3CBA100504A36 /* MoodyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyTests.swift; sourceTree = "<group>"; };
+		BA506AE922C3CBA100504A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA506AEE22C3CBA100504A36 /* MoodyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA506AF222C3CBA100504A36 /* MoodyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyUITests.swift; sourceTree = "<group>"; };
+		BA506AF422C3CBA100504A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA506B0822C3CCDB00504A36 /* MSetUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSetUpPresenter.swift; sourceTree = "<group>"; };
+		BA506B0922C3CCDB00504A36 /* MSetUpWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSetUpWorker.swift; sourceTree = "<group>"; };
+		BA506B0A22C3CCDB00504A36 /* MSetUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSetUpRouter.swift; sourceTree = "<group>"; };
+		BA506B0B22C3CCDB00504A36 /* MSetUpModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSetUpModels.swift; sourceTree = "<group>"; };
+		BA506B0C22C3CCDB00504A36 /* MSetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSetUpViewController.swift; sourceTree = "<group>"; };
+		BA506B0D22C3CCDB00504A36 /* MSetUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSetUpInteractor.swift; sourceTree = "<group>"; };
+		BA506B1422C3CCED00504A36 /* MSetUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MSetUpViewController.xib; sourceTree = "<group>"; };
+		BA506B1A22C3DA2000504A36 /* PeriodQNAPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodQNAPresenter.swift; sourceTree = "<group>"; };
+		BA506B1B22C3DA2000504A36 /* PeriodQNAWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodQNAWorker.swift; sourceTree = "<group>"; };
+		BA506B1C22C3DA2000504A36 /* PeriodQNARouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodQNARouter.swift; sourceTree = "<group>"; };
+		BA506B1D22C3DA2000504A36 /* PeriodQNAModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodQNAModels.swift; sourceTree = "<group>"; };
+		BA506B1E22C3DA2000504A36 /* PeriodQNAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodQNAViewController.swift; sourceTree = "<group>"; };
+		BA506B1F22C3DA2000504A36 /* PeriodQNAInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodQNAInteractor.swift; sourceTree = "<group>"; };
+		BA506B2622C3DA4A00504A36 /* PeriodQNAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeriodQNAViewController.xib; sourceTree = "<group>"; };
+		BA506B3F22C40D3700504A36 /* MBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBottomView.swift; sourceTree = "<group>"; };
+		BA506B4122C40D4B00504A36 /* MBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBottomView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA506ACC22C3CBA000504A36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA506AE022C3CBA100504A36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA506AEB22C3CBA100504A36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA129C9E22C4C38700B55D7C /* ReusableCells */ = {
+			isa = PBXGroup;
+			children = (
+				BA129CA122C4C3E400B55D7C /* MQNACellTableViewCell.swift */,
+				BA129CA222C4C3E400B55D7C /* MQNACellTableViewCell.xib */,
+			);
+			path = ReusableCells;
+			sourceTree = "<group>";
+		};
+		BA129CAB22C4E5DF00B55D7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA129CAC22C4E5EB00B55D7C /* MViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BA129CB022C5030200B55D7C /* Contraceptives */ = {
+			isa = PBXGroup;
+			children = (
+				BA129CB522C5032700B55D7C /* ContraceptiveViewController.swift */,
+				BA129CBD22C5033C00B55D7C /* ContraceptiveViewController.xib */,
+				BA129CB122C5032700B55D7C /* ContraceptivePresenter.swift */,
+				BA129CB222C5032700B55D7C /* ContraceptiveWorker.swift */,
+				BA129CB322C5032700B55D7C /* ContraceptiveRouter.swift */,
+				BA129CB422C5032700B55D7C /* ContraceptiveModels.swift */,
+				BA129CB622C5032700B55D7C /* ContraceptiveInteractor.swift */,
+			);
+			name = Contraceptives;
+			path = Moody/Contraceptives;
+			sourceTree = SOURCE_ROOT;
+		};
+		BA506AC622C3CBA000504A36 = {
+			isa = PBXGroup;
+			children = (
+				BA506AD122C3CBA000504A36 /* Moody */,
+				BA506AE622C3CBA100504A36 /* MoodyTests */,
+				BA506AF122C3CBA100504A36 /* MoodyUITests */,
+				BA506AD022C3CBA000504A36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA506AD022C3CBA000504A36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA506ACF22C3CBA000504A36 /* Moody.app */,
+				BA506AE322C3CBA100504A36 /* MoodyTests.xctest */,
+				BA506AEE22C3CBA100504A36 /* MoodyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA506AD122C3CBA000504A36 /* Moody */ = {
+			isa = PBXGroup;
+			children = (
+				BA506AD222C3CBA000504A36 /* AppDelegate.swift */,
+				BA506B0722C3CC6C00504A36 /* SetUp */,
+				BA506B1822C3D9E900504A36 /* PeriodQNA */,
+				BA129CB022C5030200B55D7C /* Contraceptives */,
+				BA506B1922C3D9E900504A36 /* MenstralCycleQNA */,
+				BA506B1622C3D9E900504A36 /* MenstralQNA */,
+				BA506B1722C3D9E900504A36 /* Report */,
+				BA129CAB22C4E5DF00B55D7C /* Extensions */,
+				BA129C9E22C4C38700B55D7C /* ReusableCells */,
+				BA506B3E22C40CEE00504A36 /* ReUsableComponent */,
+				BA129CAE22C4F3EB00B55D7C /* QNA.swift */,
+				BA129CF122C6258500B55D7C /* MoodyData.swift */,
+				BA506AD622C3CBA000504A36 /* Main.storyboard */,
+				BA506AD922C3CBA100504A36 /* Assets.xcassets */,
+				BA506ADB22C3CBA100504A36 /* LaunchScreen.storyboard */,
+				BA506ADE22C3CBA100504A36 /* Info.plist */,
+				BA129C9D22C411BD00B55D7C /* Localizable.strings */,
+			);
+			path = Moody;
+			sourceTree = "<group>";
+		};
+		BA506AE622C3CBA100504A36 /* MoodyTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA506AE722C3CBA100504A36 /* MoodyTests.swift */,
+				BA506AE922C3CBA100504A36 /* Info.plist */,
+			);
+			path = MoodyTests;
+			sourceTree = "<group>";
+		};
+		BA506AF122C3CBA100504A36 /* MoodyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA506AF222C3CBA100504A36 /* MoodyUITests.swift */,
+				BA506AF422C3CBA100504A36 /* Info.plist */,
+			);
+			path = MoodyUITests;
+			sourceTree = "<group>";
+		};
+		BA506B0722C3CC6C00504A36 /* SetUp */ = {
+			isa = PBXGroup;
+			children = (
+				BA506B0C22C3CCDB00504A36 /* MSetUpViewController.swift */,
+				BA506B1422C3CCED00504A36 /* MSetUpViewController.xib */,
+				BA506B0822C3CCDB00504A36 /* MSetUpPresenter.swift */,
+				BA506B0922C3CCDB00504A36 /* MSetUpWorker.swift */,
+				BA506B0A22C3CCDB00504A36 /* MSetUpRouter.swift */,
+				BA506B0B22C3CCDB00504A36 /* MSetUpModels.swift */,
+				BA506B0D22C3CCDB00504A36 /* MSetUpInteractor.swift */,
+			);
+			path = SetUp;
+			sourceTree = "<group>";
+		};
+		BA506B1622C3D9E900504A36 /* MenstralQNA */ = {
+			isa = PBXGroup;
+			children = (
+				BA129CD722C6192F00B55D7C /* MenstalQNAViewController.swift */,
+				BA129CDF22C6193C00B55D7C /* MenstalQNAViewController.xib */,
+				BA129CD322C6192F00B55D7C /* MenstalQNAPresenter.swift */,
+				BA129CD422C6192F00B55D7C /* MenstalQNAWorker.swift */,
+				BA129CD522C6192F00B55D7C /* MenstalQNARouter.swift */,
+				BA129CD622C6192F00B55D7C /* MenstalQNAModels.swift */,
+				BA129CD822C6192F00B55D7C /* MenstalQNAInteractor.swift */,
+			);
+			path = MenstralQNA;
+			sourceTree = "<group>";
+		};
+		BA506B1722C3D9E900504A36 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				BA129CE522C61BAD00B55D7C /* MenstralReportViewController.swift */,
+				BA129CED22C61BBB00B55D7C /* MenstralReportViewController.xib */,
+				BA129CE122C61BAD00B55D7C /* MenstralReportPresenter.swift */,
+				BA129CE222C61BAD00B55D7C /* MenstralReportWorker.swift */,
+				BA129CE322C61BAD00B55D7C /* MenstralReportRouter.swift */,
+				BA129CE422C61BAD00B55D7C /* MenstralReportModels.swift */,
+				BA129CE622C61BAD00B55D7C /* MenstralReportInteractor.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		BA506B1822C3D9E900504A36 /* PeriodQNA */ = {
+			isa = PBXGroup;
+			children = (
+				BA506B1E22C3DA2000504A36 /* PeriodQNAViewController.swift */,
+				BA506B2622C3DA4A00504A36 /* PeriodQNAViewController.xib */,
+				BA506B1A22C3DA2000504A36 /* PeriodQNAPresenter.swift */,
+				BA506B1B22C3DA2000504A36 /* PeriodQNAWorker.swift */,
+				BA506B1C22C3DA2000504A36 /* PeriodQNARouter.swift */,
+				BA506B1D22C3DA2000504A36 /* PeriodQNAModels.swift */,
+				BA506B1F22C3DA2000504A36 /* PeriodQNAInteractor.swift */,
+			);
+			path = PeriodQNA;
+			sourceTree = "<group>";
+		};
+		BA506B1922C3D9E900504A36 /* MenstralCycleQNA */ = {
+			isa = PBXGroup;
+			children = (
+				BA129CC322C5072600B55D7C /* MenstralCycleQNAViewController.swift */,
+				BA129CCB22C5073500B55D7C /* MenstralCycleQNAViewController.xib */,
+				BA129CBF22C5072600B55D7C /* MenstralCycleQNAPresenter.swift */,
+				BA129CC022C5072600B55D7C /* MenstralCycleQNAWorker.swift */,
+				BA129CC122C5072600B55D7C /* MenstralCycleQNARouter.swift */,
+				BA129CC222C5072600B55D7C /* MenstralCycleQNAModels.swift */,
+				BA129CC422C5072600B55D7C /* MenstralCycleQNAInteractor.swift */,
+			);
+			path = MenstralCycleQNA;
+			sourceTree = "<group>";
+		};
+		BA506B3E22C40CEE00504A36 /* ReUsableComponent */ = {
+			isa = PBXGroup;
+			children = (
+				BA506B3F22C40D3700504A36 /* MBottomView.swift */,
+				BA506B4122C40D4B00504A36 /* MBottomView.xib */,
+				BA129CA522C4D5D700B55D7C /* MTopTitleView.swift */,
+				BA129CA722C4D5E700B55D7C /* MTopTitleView.xib */,
+			);
+			path = ReUsableComponent;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA506ACE22C3CBA000504A36 /* Moody */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA506AF722C3CBA100504A36 /* Build configuration list for PBXNativeTarget "Moody" */;
+			buildPhases = (
+				BA506ACB22C3CBA000504A36 /* Sources */,
+				BA506ACC22C3CBA000504A36 /* Frameworks */,
+				BA506ACD22C3CBA000504A36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Moody;
+			productName = Moody;
+			productReference = BA506ACF22C3CBA000504A36 /* Moody.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA506AE222C3CBA100504A36 /* MoodyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA506AFA22C3CBA100504A36 /* Build configuration list for PBXNativeTarget "MoodyTests" */;
+			buildPhases = (
+				BA506ADF22C3CBA100504A36 /* Sources */,
+				BA506AE022C3CBA100504A36 /* Frameworks */,
+				BA506AE122C3CBA100504A36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA506AE522C3CBA100504A36 /* PBXTargetDependency */,
+			);
+			name = MoodyTests;
+			productName = MoodyTests;
+			productReference = BA506AE322C3CBA100504A36 /* MoodyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA506AED22C3CBA100504A36 /* MoodyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA506AFD22C3CBA100504A36 /* Build configuration list for PBXNativeTarget "MoodyUITests" */;
+			buildPhases = (
+				BA506AEA22C3CBA100504A36 /* Sources */,
+				BA506AEB22C3CBA100504A36 /* Frameworks */,
+				BA506AEC22C3CBA100504A36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA506AF022C3CBA100504A36 /* PBXTargetDependency */,
+			);
+			name = MoodyUITests;
+			productName = MoodyUITests;
+			productReference = BA506AEE22C3CBA100504A36 /* MoodyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA506AC722C3CBA000504A36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Neha Pant";
+				TargetAttributes = {
+					BA506ACE22C3CBA000504A36 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					BA506AE222C3CBA100504A36 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BA506ACE22C3CBA000504A36;
+					};
+					BA506AED22C3CBA100504A36 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BA506ACE22C3CBA000504A36;
+					};
+				};
+			};
+			buildConfigurationList = BA506ACA22C3CBA000504A36 /* Build configuration list for PBXProject "Moody" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA506AC622C3CBA000504A36;
+			productRefGroup = BA506AD022C3CBA000504A36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA506ACE22C3CBA000504A36 /* Moody */,
+				BA506AE222C3CBA100504A36 /* MoodyTests */,
+				BA506AED22C3CBA100504A36 /* MoodyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA506ACD22C3CBA000504A36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA506ADD22C3CBA100504A36 /* LaunchScreen.storyboard in Resources */,
+				BA506B2722C3DA4A00504A36 /* PeriodQNAViewController.xib in Resources */,
+				BA506B4222C40D4B00504A36 /* MBottomView.xib in Resources */,
+				BA129CEE22C61BBB00B55D7C /* MenstralReportViewController.xib in Resources */,
+				BA129CBE22C5033C00B55D7C /* ContraceptiveViewController.xib in Resources */,
+				BA129C9B22C411BD00B55D7C /* Localizable.strings in Resources */,
+				BA506ADA22C3CBA100504A36 /* Assets.xcassets in Resources */,
+				BA506B1522C3CCED00504A36 /* MSetUpViewController.xib in Resources */,
+				BA506AD822C3CBA000504A36 /* Main.storyboard in Resources */,
+				BA129CCC22C5073500B55D7C /* MenstralCycleQNAViewController.xib in Resources */,
+				BA129CA422C4C3E400B55D7C /* MQNACellTableViewCell.xib in Resources */,
+				BA129CE022C6193C00B55D7C /* MenstalQNAViewController.xib in Resources */,
+				BA129CA822C4D5E700B55D7C /* MTopTitleView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA506AE122C3CBA100504A36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA506AEC22C3CBA100504A36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA506ACB22C3CBA000504A36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA129CB922C5032700B55D7C /* ContraceptiveRouter.swift in Sources */,
+				BA129CE822C61BAD00B55D7C /* MenstralReportWorker.swift in Sources */,
+				BA129CA622C4D5D700B55D7C /* MTopTitleView.swift in Sources */,
+				BA129CC922C5072600B55D7C /* MenstralCycleQNAViewController.swift in Sources */,
+				BA129CC722C5072600B55D7C /* MenstralCycleQNARouter.swift in Sources */,
+				BA129CDB22C6192F00B55D7C /* MenstalQNARouter.swift in Sources */,
+				BA506B4022C40D3700504A36 /* MBottomView.swift in Sources */,
+				BA506B1022C3CCDB00504A36 /* MSetUpRouter.swift in Sources */,
+				BA506B2022C3DA2000504A36 /* PeriodQNAPresenter.swift in Sources */,
+				BA129CDD22C6192F00B55D7C /* MenstalQNAViewController.swift in Sources */,
+				BA506B2222C3DA2000504A36 /* PeriodQNARouter.swift in Sources */,
+				BA506B2322C3DA2000504A36 /* PeriodQNAModels.swift in Sources */,
+				BA129CB822C5032700B55D7C /* ContraceptiveWorker.swift in Sources */,
+				BA129CB722C5032700B55D7C /* ContraceptivePresenter.swift in Sources */,
+				BA129CAD22C4E5EB00B55D7C /* MViewExtension.swift in Sources */,
+				BA129CEB22C61BAD00B55D7C /* MenstralReportViewController.swift in Sources */,
+				BA129CD922C6192F00B55D7C /* MenstalQNAPresenter.swift in Sources */,
+				BA129CDA22C6192F00B55D7C /* MenstalQNAWorker.swift in Sources */,
+				BA129CEA22C61BAD00B55D7C /* MenstralReportModels.swift in Sources */,
+				BA506B0E22C3CCDB00504A36 /* MSetUpPresenter.swift in Sources */,
+				BA129CA322C4C3E400B55D7C /* MQNACellTableViewCell.swift in Sources */,
+				BA129CDE22C6192F00B55D7C /* MenstalQNAInteractor.swift in Sources */,
+				BA129CE722C61BAD00B55D7C /* MenstralReportPresenter.swift in Sources */,
+				BA506B2122C3DA2000504A36 /* PeriodQNAWorker.swift in Sources */,
+				BA506B2422C3DA2000504A36 /* PeriodQNAViewController.swift in Sources */,
+				BA129CC822C5072600B55D7C /* MenstralCycleQNAModels.swift in Sources */,
+				BA129CBA22C5032700B55D7C /* ContraceptiveModels.swift in Sources */,
+				BA129CE922C61BAD00B55D7C /* MenstralReportRouter.swift in Sources */,
+				BA129CDC22C6192F00B55D7C /* MenstalQNAModels.swift in Sources */,
+				BA129CEC22C61BAD00B55D7C /* MenstralReportInteractor.swift in Sources */,
+				BA506B1322C3CCDB00504A36 /* MSetUpInteractor.swift in Sources */,
+				BA506B0F22C3CCDB00504A36 /* MSetUpWorker.swift in Sources */,
+				BA506AD322C3CBA000504A36 /* AppDelegate.swift in Sources */,
+				BA129CCA22C5072600B55D7C /* MenstralCycleQNAInteractor.swift in Sources */,
+				BA129CF222C6258500B55D7C /* MoodyData.swift in Sources */,
+				BA506B1122C3CCDB00504A36 /* MSetUpModels.swift in Sources */,
+				BA129CC522C5072600B55D7C /* MenstralCycleQNAPresenter.swift in Sources */,
+				BA129CAF22C4F3EB00B55D7C /* QNA.swift in Sources */,
+				BA506B2522C3DA2000504A36 /* PeriodQNAInteractor.swift in Sources */,
+				BA129CBC22C5032700B55D7C /* ContraceptiveInteractor.swift in Sources */,
+				BA129CC622C5072600B55D7C /* MenstralCycleQNAWorker.swift in Sources */,
+				BA129CBB22C5032700B55D7C /* ContraceptiveViewController.swift in Sources */,
+				BA506B1222C3CCDB00504A36 /* MSetUpViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA506ADF22C3CBA100504A36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA506AE822C3CBA100504A36 /* MoodyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA506AEA22C3CBA100504A36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA506AF322C3CBA100504A36 /* MoodyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA506AE522C3CBA100504A36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA506ACE22C3CBA000504A36 /* Moody */;
+			targetProxy = BA506AE422C3CBA100504A36 /* PBXContainerItemProxy */;
+		};
+		BA506AF022C3CBA100504A36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA506ACE22C3CBA000504A36 /* Moody */;
+			targetProxy = BA506AEF22C3CBA100504A36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA129C9D22C411BD00B55D7C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA129C9C22C411BD00B55D7C /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		BA506AD622C3CBA000504A36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA506AD722C3CBA000504A36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA506ADB22C3CBA100504A36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA506ADC22C3CBA100504A36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA506AF522C3CBA100504A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA506AF622C3CBA100504A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA506AF822C3CBA100504A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q5M2KYM2F;
+				INFOPLIST_FILE = Moody/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moody.month.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA506AF922C3CBA100504A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q5M2KYM2F;
+				INFOPLIST_FILE = Moody/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moody.month.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BA506AFB22C3CBA100504A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q5M2KYM2F;
+				INFOPLIST_FILE = MoodyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moody.month.com.MoodyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moody.app/Moody";
+			};
+			name = Debug;
+		};
+		BA506AFC22C3CBA100504A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q5M2KYM2F;
+				INFOPLIST_FILE = MoodyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moody.month.com.MoodyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moody.app/Moody";
+			};
+			name = Release;
+		};
+		BA506AFE22C3CBA100504A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q5M2KYM2F;
+				INFOPLIST_FILE = MoodyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moody.month.com.MoodyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Moody;
+			};
+			name = Debug;
+		};
+		BA506AFF22C3CBA100504A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Q5M2KYM2F;
+				INFOPLIST_FILE = MoodyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moody.month.com.MoodyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Moody;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA506ACA22C3CBA000504A36 /* Build configuration list for PBXProject "Moody" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA506AF522C3CBA100504A36 /* Debug */,
+				BA506AF622C3CBA100504A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA506AF722C3CBA100504A36 /* Build configuration list for PBXNativeTarget "Moody" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA506AF822C3CBA100504A36 /* Debug */,
+				BA506AF922C3CBA100504A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA506AFA22C3CBA100504A36 /* Build configuration list for PBXNativeTarget "MoodyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA506AFB22C3CBA100504A36 /* Debug */,
+				BA506AFC22C3CBA100504A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA506AFD22C3CBA100504A36 /* Build configuration list for PBXNativeTarget "MoodyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA506AFE22C3CBA100504A36 /* Debug */,
+				BA506AFF22C3CBA100504A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA506AC722C3CBA000504A36 /* Project object */;
+}

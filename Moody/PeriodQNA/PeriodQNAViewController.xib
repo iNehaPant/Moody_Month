@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PeriodQNAViewController" customModule="Moody" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="QZR-cO-ARx" id="Cir-m4-skl"/>
+                <outlet property="qnaTableView" destination="NkV-JM-hlH" id="9Vc-y4-BFc"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Qm0-G9-yvI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moody_green_bg" translatesAutoresizingMaskIntoConstraints="NO" id="14w-x7-CvX">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="100" sectionFooterHeight="56" translatesAutoresizingMaskIntoConstraints="NO" id="NkV-JM-hlH">
+                    <rect key="frame" x="0.0" y="57" width="320" height="450"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="BtF-nq-qD1"/>
+                        <outlet property="delegate" destination="-1" id="kRw-cd-nC2"/>
+                    </connections>
+                </tableView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZR-cO-ARx" customClass="MBottomView" customModule="Moody" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="508" width="320" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Yy2-Ry-KcF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QZR-cO-ARx" firstAttribute="top" secondItem="NkV-JM-hlH" secondAttribute="bottom" constant="1" id="8qZ-UY-Rlp"/>
+                <constraint firstAttribute="bottom" secondItem="14w-x7-CvX" secondAttribute="bottom" id="9Pa-HD-GJS"/>
+                <constraint firstItem="NkV-JM-hlH" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="F9s-Sc-gJ1"/>
+                <constraint firstItem="QZR-cO-ARx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="RRq-jI-P1i"/>
+                <constraint firstItem="14w-x7-CvX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dGM-oa-reD"/>
+                <constraint firstItem="14w-x7-CvX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gWZ-GK-tWN"/>
+                <constraint firstItem="14w-x7-CvX" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="hqs-hF-CWp"/>
+                <constraint firstItem="NkV-JM-hlH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="37" id="m6w-SF-Z2r"/>
+                <constraint firstItem="NkV-JM-hlH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mr3-zP-o89"/>
+                <constraint firstItem="QZR-cO-ARx" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="plB-m8-Z3Z"/>
+                <constraint firstItem="QZR-cO-ARx" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="qpV-uB-YFJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.75" y="143.66197183098592"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="moody_green_bg" width="320" height="568"/>
+    </resources>
+</document>

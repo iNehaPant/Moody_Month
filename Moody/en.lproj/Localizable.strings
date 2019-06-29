@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Moody
+
+  Created by Neha Pant on 26/06/2019.
+  Copyright © 2019 Neha Pant. All rights reserved.
+*/
+"CANCEL" = "CANCEL";
+"NEXT" = "NEXT";
