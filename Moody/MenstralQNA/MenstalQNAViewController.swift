@@ -11,7 +11,7 @@
 //
 
 import UIKit
-
+private let defaultSelectionDays = 27
 protocol MenstalQNADisplayLogic: class
 {
 }
@@ -63,11 +63,17 @@ class MenstalQNAViewController: UIViewController, MenstalQNADisplayLogic, UIPick
         setUpBottomView()
         bottomView.setRightBtnTitle(title: "DONE")
         //default values:
-        MoodyData.shared.aboutCycleLenght = "28 days"
+        if let aboutCycleLenght = MoodyData.shared.aboutCycleLenght  {
+            let array:[String] = aboutCycleLenght.components(separatedBy: " ")
+            guard let selectedRow = Int(array[0]) else { return}
+                periodDatePickerView.selectRow( selectedRow-1, inComponent: 0, animated: false)
+        } else {
+            MoodyData.shared.aboutCycleLenght = "28 days"
+            periodDatePickerView.selectRow(defaultSelectionDays, inComponent: 0, animated: false)
+        }
     }
     override func viewDidAppear(_ animated: Bool) {
         super .viewDidAppear(animated)
-        //periodDatePickerView.selectedRow(inComponent: 28)
     }
     fileprivate func setUpBottomView() {
         bottomView.setRightBtnSelectedState()
@@ -101,8 +107,7 @@ class MenstalQNAViewController: UIViewController, MenstalQNADisplayLogic, UIPick
     }
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
         let titleData = cycleLenghtArray[row]
-        let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedString.Key.font:UIFont(name: "Arial", size: 18.0)!,NSAttributedString.Key.foregroundColor:UIColor.white])
+        let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedString.Key.font:UIFont.boldSystemFont(ofSize: 18.0),NSAttributedString.Key.foregroundColor:UIColor.white])
         return myTitle
     }
-    
 }

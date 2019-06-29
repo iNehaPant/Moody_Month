@@ -15,7 +15,7 @@ import UIKit
 private let CellIdentifier = "CellIdentifier"
 private let titleStr = "Do you have periods?"
 private let sectionHeaderHeight = 250
-private let HeightOfCell:CGFloat = 90.0
+private let heightOfCell:CGFloat = 44.0
 private let cancelTitle = "CANCEL"
 protocol PeriodQNADisplayLogic: class
 {
@@ -63,15 +63,21 @@ class PeriodQNAViewController: UIViewController, PeriodQNADisplayLogic
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        loadCell()
-        setUpBottomView()
-        addQNA()
+        loadCell() // load cell
+        setUpBottomView() //set bootom view
+        addQNA() //add questions
         bottomView.setLeftBtnTitle(title: cancelTitle)
     }
+    /**
+        load cell
+    */
     fileprivate func loadCell() {
         let nib = UINib(nibName: "MQNACellTableViewCell", bundle: nil)
         qnaTableView.register(nib, forCellReuseIdentifier: CellIdentifier)
     }
+    /**
+     load Bottom view
+     */
     fileprivate func setUpBottomView() {
         bottomView.leftBtnClickedBlock = {[weak self] () -> Void in
             self?.router?.popScreen()
@@ -97,7 +103,7 @@ extension PeriodQNAViewController: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        return UITableView.automaticDimension
+        return heightOfCell
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
     {
@@ -116,12 +122,18 @@ extension PeriodQNAViewController: UITableViewDataSource, UITableViewDelegate {
         
         if let array = qNADataSource.qna {
             cell?.qnaTxt.text = array[indexPath.row].qnaStr
-            if array[indexPath.row].isSelected == true {
+            if array[indexPath.row].qnaStr == MoodyData.shared.aboutPeriod {
+                array[indexPath.row].isSelected = true
                 cell?.rightIconSelected()
-                //when radio button is selected
                 bottomView.setRightBtnSelectedState()
             }else {
-                cell?.rightIconUnSelected()
+                if array[indexPath.row].isSelected == true {
+                    cell?.rightIconSelected()
+                    //when radio button is selected
+                    bottomView.setRightBtnSelectedState()
+                }else {
+                    cell?.rightIconUnSelected()
+                }
             }
         }
         return cell!

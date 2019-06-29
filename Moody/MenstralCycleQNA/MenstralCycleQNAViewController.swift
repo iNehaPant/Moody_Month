@@ -13,7 +13,7 @@
 import UIKit
 
 private let titleStr = "When did your last period (bleed) start?"
-private let dateFormat = "dd MMM yyyy"
+private let dateFormat = "dd MMMM yyyy"
 
 protocol MenstralCycleQNADisplayLogic: class
 {
@@ -76,7 +76,19 @@ class MenstralCycleQNAViewController: UIViewController, MenstralCycleQNADisplayL
         let formatter = DateFormatter()
         formatter.dateFormat = dateFormat
         let result = formatter.string(from: date)
-        MoodyData.shared.aboutlastPeriod = result
+        
+        //default values:
+        if let aboutlastPeriodDate = MoodyData.shared.aboutlastPeriod  {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = dateFormat 
+            //according to date format your date string
+            guard let date = dateFormatter.date(from: aboutlastPeriodDate) else {
+                fatalError()
+            }
+            cycleDatePickerView.date = date
+        } else {
+            MoodyData.shared.aboutlastPeriod = result
+        }
     }
     @IBAction func datePickerValueChange(_ sender: Any) {
         // Create date formatter

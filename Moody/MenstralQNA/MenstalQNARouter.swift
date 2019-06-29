@@ -31,6 +31,7 @@ class MenstalQNARouter: NSObject, MenstalQNARoutingLogic, MenstalQNADataPassing
     
     func routeNextScreen() {
         let menstralReportVC = MenstralReportViewController()
+        menstralReportVC.isFirstScreen = false
         viewController?.navigationController?.pushViewController(menstralReportVC, animated: true)
     }
     func popScreen(){

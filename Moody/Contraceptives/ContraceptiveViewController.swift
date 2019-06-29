@@ -15,7 +15,7 @@ import UIKit
 private let CellIdentifier = "CellIdentifier"
 private let titleStr = "Are you on contraceptives?"
 private let sectionHeaderHeight = 250
-private let HeightOfCell:CGFloat = 90.0
+private let heightOfCell:CGFloat = 44.0
 private let cancelTitle = "CANCEL"
 protocol ContraceptiveDisplayLogic: class
 {
@@ -96,7 +96,7 @@ extension ContraceptiveViewController: UITableViewDataSource, UITableViewDelegat
         return 1
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        return heightOfCell
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let tempView:MTopTitleView = MTopTitleView(frame: CGRect(x: 0, y: 0, width: Int(tableView.frame.width), height: sectionHeaderHeight))
@@ -114,11 +114,17 @@ extension ContraceptiveViewController: UITableViewDataSource, UITableViewDelegat
         
         if let array = qNADataSource.qna {
             cell?.qnaTxt.text = array[indexPath.row].qnaStr
-            if array[indexPath.row].isSelected == true {
+            if array[indexPath.row].qnaStr == MoodyData.shared.aboutContraceptive {
+                array[indexPath.row].isSelected = true
                 cell?.rightIconSelected()
                 bottomView.setRightBtnSelectedState()
             }else {
-                cell?.rightIconUnSelected()
+                if array[indexPath.row].isSelected == true {
+                    cell?.rightIconSelected()
+                    bottomView.setRightBtnSelectedState()
+                }else {
+                    cell?.rightIconUnSelected()
+                }
             }
         }
         

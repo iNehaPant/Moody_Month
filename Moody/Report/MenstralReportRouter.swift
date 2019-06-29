@@ -29,6 +29,6 @@ class MenstralReportRouter: NSObject, MenstralReportRoutingLogic, MenstralReport
     var dataStore: MenstralReportDataStore?
     
     func popScreen() {
-        viewController?.navigationController?.popViewController(animated: true)
+        viewController?.navigationController?.popToRootViewController(animated: true)
     }
 }

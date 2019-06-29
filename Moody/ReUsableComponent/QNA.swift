@@ -9,6 +9,6 @@
 import UIKit
 
 class QNA {
-    var qnaStr:String?
-    var isSelected:Bool?
+    var qnaStr:String? //Questions
+    var isSelected:Bool? //Question selected or not
 }

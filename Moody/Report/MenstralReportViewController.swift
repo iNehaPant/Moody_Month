@@ -18,63 +18,110 @@
 
     class MenstralReportViewController: UIViewController, MenstralReportDisplayLogic
     {
-      @IBOutlet weak var aboutPeriodLbl: UILabel!
-      @IBOutlet weak var aboutContraceptiveLbl: UILabel!
-      @IBOutlet weak var aboutlastPeriodLbl: UILabel!
-      @IBOutlet weak var aboutCycleLenghtLbl: UILabel!
-      @IBOutlet weak var gobackBtn: UIButton!
-      
-      var interactor: MenstralReportBusinessLogic?
-      var router: (NSObjectProtocol & MenstralReportRoutingLogic & MenstralReportDataPassing)?
-     
- 
-      // MARK: Object lifecycle
-      
-      override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
-      {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        setup()
-      }
-      
-      required init?(coder aDecoder: NSCoder)
-      {
-        super.init(coder: aDecoder)
-        setup()
-      }
-      
-      // MARK: Setup
-      
-      private func setup()
-      {
-        let viewController = self
-        let interactor = MenstralReportInteractor()
-        let presenter = MenstralReportPresenter()
-        let router = MenstralReportRouter()
-        viewController.interactor = interactor
-        viewController.router = router
-        interactor.presenter = presenter
-        presenter.viewController = viewController
-        router.viewController = viewController
-        router.dataStore = interactor
-      }
-      
-      
-      // MARK: View lifecycle
-      
-      override func viewDidLoad()
-      {
-        super.viewDidLoad()
-        gobackBtn.layer.borderColor = UIColor.white.cgColor
-        aboutPeriodLbl.text =  MoodyData.shared.aboutPeriod
-        aboutContraceptiveLbl.text = MoodyData.shared.aboutContraceptive
-        aboutlastPeriodLbl.text = MoodyData.shared.aboutlastPeriod
-        aboutCycleLenghtLbl.text = MoodyData.shared.aboutCycleLenght
+        @IBOutlet weak var aboutPeriodLbl: UILabel!
+        @IBOutlet weak var aboutContraceptiveLbl: UILabel!
+        @IBOutlet weak var aboutlastPeriodLbl: UILabel!
+        @IBOutlet weak var aboutCycleLenghtLbl: UILabel!
+        @IBOutlet weak var gobackBtn: UIButton!
+        var isFirstScreen:Bool = true
+        var interactor: MenstralReportBusinessLogic?
+        var router: (NSObjectProtocol & MenstralReportRoutingLogic & MenstralReportDataPassing)?
         
-      }
-      
-      @IBAction func goBackAction(_ sender: Any) {
-        router?.popScreen()
-      }
-      @IBAction func startAppAction(_ sender: Any) {
-      }
+        
+        // MARK: Object lifecycle
+        
+        override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
+        {
+            super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+            setup()
+        }
+        
+        required init?(coder aDecoder: NSCoder)
+        {
+            super.init(coder: aDecoder)
+            setup()
+        }
+        
+        // MARK: Setup
+        
+        private func setup()
+        {
+            let viewController = self
+            let interactor = MenstralReportInteractor()
+            let presenter = MenstralReportPresenter()
+            let router = MenstralReportRouter()
+            viewController.interactor = interactor
+            viewController.router = router
+            interactor.presenter = presenter
+            presenter.viewController = viewController
+            router.viewController = viewController
+            router.dataStore = interactor
+        }
+        
+        
+        // MARK: View lifecycle
+        
+        override func viewDidLoad()
+        {
+            super.viewDidLoad()
+            gobackBtn.layer.borderColor = UIColor.white.cgColor
+            ReportQNAUtility.setQNACompleted(isCompleted: true)
+            aboutPeriodData()
+            aboutContraceptiveData()
+            aboutLastPeriodData()
+            aboutCycleLenghtData()
+            
+        }
+        
+        @IBAction func goBackAction(_ sender: Any) {
+            router?.popScreen()
+        }
+        @IBAction func startAppAction(_ sender: Any) {
+        }
+        fileprivate func aboutPeriodData() {
+            if ReportQNAUtility.getAboutPeriod() != nil && isFirstScreen == true
+            {
+                aboutPeriodLbl.text = ReportQNAUtility.getAboutPeriod()
+            }
+            else
+            {
+                ReportQNAUtility.setAboutPeriod(str: MoodyData.shared.aboutPeriod)
+                aboutPeriodLbl.text =  MoodyData.shared.aboutPeriod
+            }
+        }
+        
+        fileprivate func aboutContraceptiveData()  {
+            if ReportQNAUtility.getAboutContraceptive() != nil && isFirstScreen == true
+            {
+                aboutContraceptiveLbl.text = ReportQNAUtility.getAboutContraceptive()
+            }
+            else {
+                ReportQNAUtility.setAboutContraceptive(str: MoodyData.shared.aboutContraceptive)
+                aboutContraceptiveLbl.text = MoodyData.shared.aboutContraceptive
+                
+            }
+        }
+        
+        fileprivate func aboutLastPeriodData() {
+            if ReportQNAUtility.getAboutLastPeriod() != nil && isFirstScreen == true {
+                aboutlastPeriodLbl.text = ReportQNAUtility.getAboutLastPeriod()
+            }
+            else {
+                ReportQNAUtility.setAboutLastPeriod(str: MoodyData.shared.aboutlastPeriod)
+                aboutlastPeriodLbl.text = MoodyData.shared.aboutlastPeriod
+                
+            }
+        }
+        
+        fileprivate func aboutCycleLenghtData() {
+            if ReportQNAUtility.getAboutCycleLenght() != nil && isFirstScreen == true
+            {
+                aboutCycleLenghtLbl.text = ReportQNAUtility.getAboutCycleLenght()
+            }
+            else
+            {
+                ReportQNAUtility.setAboutCycleLenght(str: MoodyData.shared.aboutCycleLenght)
+                aboutCycleLenghtLbl.text = MoodyData.shared.aboutCycleLenght
+            }
+        }
     }

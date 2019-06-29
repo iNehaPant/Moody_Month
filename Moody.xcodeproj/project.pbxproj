@@ -43,6 +43,7 @@
 		BA129CEC22C61BAD00B55D7C /* MenstralReportInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CE622C61BAD00B55D7C /* MenstralReportInteractor.swift */; };
 		BA129CEE22C61BBB00B55D7C /* MenstralReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA129CED22C61BBB00B55D7C /* MenstralReportViewController.xib */; };
 		BA129CF222C6258500B55D7C /* MoodyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129CF122C6258500B55D7C /* MoodyData.swift */; };
+		BA129D3222C7D13D00B55D7C /* ReportQNAUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA129D3122C7D13D00B55D7C /* ReportQNAUtility.swift */; };
 		BA506AD322C3CBA000504A36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506AD222C3CBA000504A36 /* AppDelegate.swift */; };
 		BA506AD822C3CBA000504A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA506AD622C3CBA000504A36 /* Main.storyboard */; };
 		BA506ADA22C3CBA100504A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA506AD922C3CBA100504A36 /* Assets.xcassets */; };
@@ -121,6 +122,7 @@
 		BA129CE622C61BAD00B55D7C /* MenstralReportInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenstralReportInteractor.swift; sourceTree = "<group>"; };
 		BA129CED22C61BBB00B55D7C /* MenstralReportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenstralReportViewController.xib; sourceTree = "<group>"; };
 		BA129CF122C6258500B55D7C /* MoodyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyData.swift; sourceTree = "<group>"; };
+		BA129D3122C7D13D00B55D7C /* ReportQNAUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportQNAUtility.swift; sourceTree = "<group>"; };
 		BA506ACF22C3CBA000504A36 /* Moody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moody.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA506AD222C3CBA000504A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA506AD722C3CBA000504A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				BA506B3E22C40CEE00504A36 /* ReUsableComponent */,
 				BA129CAE22C4F3EB00B55D7C /* QNA.swift */,
 				BA129CF122C6258500B55D7C /* MoodyData.swift */,
+				BA129D3122C7D13D00B55D7C /* ReportQNAUtility.swift */,
 				BA506AD622C3CBA000504A36 /* Main.storyboard */,
 				BA506AD922C3CBA100504A36 /* Assets.xcassets */,
 				BA506ADB22C3CBA100504A36 /* LaunchScreen.storyboard */,
@@ -529,6 +532,7 @@
 				BA129CF222C6258500B55D7C /* MoodyData.swift in Sources */,
 				BA506B1122C3CCDB00504A36 /* MSetUpModels.swift in Sources */,
 				BA129CC522C5072600B55D7C /* MenstralCycleQNAPresenter.swift in Sources */,
+				BA129D3222C7D13D00B55D7C /* ReportQNAUtility.swift in Sources */,
 				BA129CAF22C4F3EB00B55D7C /* QNA.swift in Sources */,
 				BA506B2522C3DA2000504A36 /* PeriodQNAInteractor.swift in Sources */,
 				BA129CBC22C5032700B55D7C /* ContraceptiveInteractor.swift in Sources */,
