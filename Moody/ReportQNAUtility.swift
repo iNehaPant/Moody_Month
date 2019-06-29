@@ -25,12 +25,10 @@ class ReportQNAUtility {
     class func setAboutPeriod(str:String?)
     {
         UserDefaults.standard.set(str, forKey: ABOUT_PERIOD)
-        print(UserDefaults.standard.string(forKey: ABOUT_PERIOD))
 
     }
     class func getAboutPeriod() -> String?
     {
-        print(UserDefaults.standard.string(forKey: ABOUT_PERIOD))
         return UserDefaults.standard.string(forKey: ABOUT_PERIOD) 
     }
     class func setAboutContraceptive(str:String?)
