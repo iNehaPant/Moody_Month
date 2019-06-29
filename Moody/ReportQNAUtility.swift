@@ -29,7 +29,7 @@ class ReportQNAUtility {
     }
     class func getAboutPeriod() -> String?
     {
-        return UserDefaults.standard.string(forKey: ABOUT_PERIOD) 
+        return UserDefaults.standard.string(forKey: ABOUT_PERIOD)
     }
     class func setAboutContraceptive(str:String?)
     {
